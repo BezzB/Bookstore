@@ -28,4 +28,4 @@ const BooksList = () => {
   );
 };
 
-export default BooksList
+export default BooksList;

@@ -17,9 +17,9 @@ const Book = () => {
     <div>
       <h2>{book.title}</h2>
       <p>{book.author}</p>
-      <button onClick={deleteBook}>Delete Book</button>
+      <button type="button" onClick={deleteBook}>Delete Book</button>
     </div>
   );
 };
 
-export default Book
+export default Book;

@@ -1,30 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Books';
+import Books from './components/Booklist';
+import AddBook from './components/Bookform';
+import Catagories from './components/Categories';
 
-const App = () => (
-  <BrowserRouter>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/categories">
-        <Categories />
-      </Route>
-  </BrowserRouter>
-);
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/categories" element={<Catagories />} />
+      </Routes>
+      <AddBook />
+    </Router>
+  );
+}
 
-const Home = () => (
-  <div>
-    <h1>Home</h1>
-  </div>
-);
-
-const Categories = () => (
-  <div>
-    <h1>Categories</h1>
-  </div>
-);
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-export default App
+export default App;

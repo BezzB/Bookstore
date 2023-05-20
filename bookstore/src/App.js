@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Books';
+import Navbar from './components/Navbar';
 import Books from './components/Booklist';
 import AddBook from './components/Bookform';
 import Catagories from './components/Categories';

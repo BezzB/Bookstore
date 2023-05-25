@@ -8,7 +8,7 @@ function Navbar() {
           <li><a href="/categories">Catagories</a></li>
         </nav>
         <div className="user">
-          <img src="./img/avatar.svg" alt="user" />
+          <img src="./src/img/logo" alt="user" />
         </div>
       </div>
     </div>

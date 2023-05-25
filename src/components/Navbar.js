@@ -1,14 +1,17 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
     <div className="nav-bar">
       <div className="nav-con">
         <nav className="nav-link">
-          <h1><a className="logo" href="/">Bookstore </a></h1>
-          <li><a href="/">Books</a></li>
-          <li><a href="/categories">Catagories</a></li>
+          <h1><Link className="logo" to="/">Bookstore</Link></h1>
+          <li><Link to="/components/Books">Books</Link></li>
+          <li><Link to="/components/Categories">Categories</Link></li>
         </nav>
         <div className="user">
-          <img src="./src/img/logo" alt="user" />
+          <img src="./src/img/logo.png" alt="user" />
         </div>
       </div>
     </div>

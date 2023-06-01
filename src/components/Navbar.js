@@ -1,7 +1,6 @@
 import React from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import './styles/nav.css';
 
 function Navi() {
   return (

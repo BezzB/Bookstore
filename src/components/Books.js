@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Book = () => {
+function Book() {
   const [book, setBook] = useState({
     title: 'The Book Title',
     author: 'The Book Author',
@@ -20,6 +20,6 @@ const Book = () => {
       <button type="button" onClick={deleteBook}>Delete Book</button>
     </div>
   );
-};
+}
 
 export default Book;

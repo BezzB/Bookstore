@@ -1,21 +1,23 @@
 import React from 'react';
+import { FaUserCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import './styles/nav.css';
 
-function Navbar() {
+function Navi() {
   return (
-    <div className="nav-bar">
-      <div className="nav-con">
-        <nav className="nav-link">
-          <h1><Link className="logo" to="/">Bookstore</Link></h1>
-          <li><Link to="/components/Books">Books</Link></li>
-          <li><Link to="/components/Categories">Categories</Link></li>
-        </nav>
-        <div className="user">
-          <img src="./src/img/logo.png" alt="user" />
-        </div>
+    <nav className="nav-container">
+      <h1 className="navtitle">
+        <Link to="/">BookStore </Link>
+      </h1>
+      <div className="navlinks">
+        <Link to="/">Books</Link>
+        <Link to="/categories">Categories</Link>
       </div>
-    </div>
+      <div className="icon-imgs">
+        <FaUserCircle className="icon-img" />
+      </div>
+    </nav>
   );
 }
 
-export default Navbar;
+export default Navi;

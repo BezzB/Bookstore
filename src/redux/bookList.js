@@ -4,7 +4,7 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { useEffect } from 'react';
 import {
   getBooks, removeBook, deleteBooks,
-} from '../books/booksSlice';
+} from './books/booksSlice';
 
 function BookList() {
   const { book, isLoading } = useSelector((state) => state.book);
@@ -36,9 +36,9 @@ function BookList() {
               <p className="tit">{key.author}</p>
             </div>
             <div className="book-btn">
-              <button type="button" className="l-btn">comments</button>
-              <button className="l-btn rem" type="button" onClick={() => handleremoveBook(key.item_id)}>remove</button>
-              <button type="button" className="l-btn">edit</button>
+              <button type="button" className="l-btn">Comments</button>
+              <button className="l-btn rem" type="button" onClick={() => handleremoveBook(key.item_id)}>Delete</button>
+              <button type="button" className="l-btn">Edit</button>
             </div>
           </div>
           <div className="comp-icon">
@@ -46,7 +46,7 @@ function BookList() {
               <AiOutlineLoading3Quarters />
             </div>
             <div className="prog-details">
-              <span className="comp-percent">64%</span>
+              <span className="comp-percent">54%</span>
               <span className="comp-status">completed</span>
             </div>
           </div>
@@ -55,7 +55,7 @@ function BookList() {
             <p className="chapter-1">
               Chapter 15
             </p>
-            <button type="button" className="upBtn">UPDATE PROGRESS</button>
+            <button type="button" className="upBtn">UPDATE LEVEL</button>
           </div>
         </div>
       ))}

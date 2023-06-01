@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Categories from './components/categories';
+import Categories from './redux/categories/categoriesSlice';
 import Navi from './components/Navbar';
 import Books from './components/bookApp';
 

@@ -4,7 +4,7 @@ import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { useEffect } from 'react';
 import {
   getBooks, removeBook, deleteBooks,
-} from '../books/booksSlice';
+} from '../../books/booksSlice';
 
 function BookList() {
   const { book, isLoading } = useSelector((state) => state.book);

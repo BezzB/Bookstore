@@ -1,8 +1,8 @@
 import { nanoid } from '@reduxjs/toolkit';
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook, postBooks } from '../../books/booksSlice';
-import './styles/nav.css';
+import { addBook, postBooks } from './books/booksSlice';
+import '../styles/nav.css';
 
 function Forms() {
   const dispatch = useDispatch();

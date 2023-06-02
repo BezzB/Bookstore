@@ -51,7 +51,7 @@ function BookList() {
             </div>
           </div>
           <div className="current-cont">
-            <p className="current-chpt">CURRENT CHAPTER</p>
+            <p className="current-chpt">CHAPTER Now</p>
             <p className="chapter-1">
               Chapter 15
             </p>

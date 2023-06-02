@@ -32,10 +32,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math-Magician ] <a name="about-project"></a>
+# 📖 [Bookstore ] <a name="about-project"></a>
 
 
-**[Math-Magician ]** is a simple build Project To Display Book from the Store.
+**[Bookstore ]** is a simple build Project To Display Book from the Store.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -71,7 +71,7 @@
 - Css
 - Javascript
 - React
--
+-Redux
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

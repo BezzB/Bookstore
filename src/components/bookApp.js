@@ -1,6 +1,6 @@
 import React from 'react';
 import Forms from '../redux/bookForm';
-import BookList from '../redux/bookLists';
+import BookList from '../redux/Lists';
 
 function Books() {
   return (

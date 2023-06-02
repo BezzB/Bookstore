@@ -363,3 +363,7 @@ hr {
   display: flex;
   justify-content: space-around;
 }
+
+.addSection {
+background-color:transparent;
+}
